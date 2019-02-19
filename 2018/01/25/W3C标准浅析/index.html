@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="W3C标准及规范概念：W3C标准12345678中文名：万维网联盟，外文名：World Wide Web Consortium    万维网联盟标准不是某一个标准，而是一些列标准的集合。网页主要有三部分组成：结构（Structure）、表现（Presentation）、行为（Behavior）。对应的标准也有三方面：结构化标准主要包括XHTML和XML，表现标准语言主要包括CSS、行为标准主要包括">
+<meta property="og:type" content="article">
+<meta property="og:title" content="W3C标准浅析">
+<meta property="og:url" content="http://yoursite.com/2018/01/25/W3C标准浅析/index.html">
+<meta property="og:site_name" content="清风明月与柴米油盐">
+<meta property="og:description" content="W3C标准及规范概念：W3C标准12345678中文名：万维网联盟，外文名：World Wide Web Consortium    万维网联盟标准不是某一个标准，而是一些列标准的集合。网页主要有三部分组成：结构（Structure）、表现（Presentation）、行为（Behavior）。对应的标准也有三方面：结构化标准主要包括XHTML和XML，表现标准语言主要包括CSS、行为标准主要包括">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-01-25T07:52:10.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="W3C标准浅析">
+<meta name="twitter:description" content="W3C标准及规范概念：W3C标准12345678中文名：万维网联盟，外文名：World Wide Web Consortium    万维网联盟标准不是某一个标准，而是一些列标准的集合。网页主要有三部分组成：结构（Structure）、表现（Presentation）、行为（Behavior）。对应的标准也有三方面：结构化标准主要包括XHTML和XML，表现标准语言主要包括CSS、行为标准主要包括">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/01/25/W3C标准浅析/">
+
+
+
+
+
+  <title>W3C标准浅析 | 清风明月与柴米油盐</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">清风明月与柴米油盐</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/25/W3C标准浅析/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="suling Wu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/lu.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="清风明月与柴米油盐">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">W3C标准浅析</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-25T15:18:12+08:00">
+                2018-01-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="W3C标准及规范"><a href="#W3C标准及规范" class="headerlink" title="W3C标准及规范"></a>W3C标准及规范</h2><h3 id="概念：W3C标准"><a href="#概念：W3C标准" class="headerlink" title="概念：W3C标准"></a>概念：W3C标准</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">中文名：万维网联盟，外文名：World Wide Web Consortium    </span><br><span class="line"></span><br><span class="line">万维网联盟标准不是某一个标准，而是一些列标准的集合。网页主要有三部分组成：结构（Structure）</span><br><span class="line">、表现（Presentation）、行为（Behavior）。</span><br><span class="line"></span><br><span class="line">对应的标准也有三方面：结构化标准主要包括XHTML和XML，表现标准语言主要包括CSS、行为标准主要包括</span><br><span class="line">（如W3C DOM）、ECMAScript等。这些标准大部分是W3C起草发布，也有一是其他标准组织制定的标准，</span><br><span class="line">比如ECMAScript（European Computer Manufacturers Association）的ECMAScript的标准。</span><br></pre></td></tr></table></figure>
+<h3 id="目的：为什么要遵循标准"><a href="#目的：为什么要遵循标准" class="headerlink" title="目的：为什么要遵循标准"></a>目的：为什么要遵循标准</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">用一个程序语言来说，我们是转换器........adapter，我们想方设法让我们的页面、我们的程序</span><br><span class="line">能够支持所有浏览器，能够满足尽可能多的用户。我们要满足所有的用户，即使做不到，我们也要满足</span><br><span class="line">我们技术范围之内的所有用户</span><br></pre></td></tr></table></figure>
+<h3 id="目标：一个标准的制作的网站，让你压根感觉不到跟标准有关。"><a href="#目标：一个标准的制作的网站，让你压根感觉不到跟标准有关。" class="headerlink" title="目标：一个标准的制作的网站，让你压根感觉不到跟标准有关。"></a>目标：一个标准的制作的网站，让你压根感觉不到跟标准有关。</h3><h3 id="受众：-所有UI设计师、技术工程师、运行维护人员。"><a href="#受众：-所有UI设计师、技术工程师、运行维护人员。" class="headerlink" title="受众： 所有UI设计师、技术工程师、运行维护人员。"></a>受众： 所有UI设计师、技术工程师、运行维护人员。</h3><h3 id="标准规范："><a href="#标准规范：" class="headerlink" title="标准规范："></a>标准规范：</h3><h4 id="1、-需要声明（DOCTYPE）"><a href="#1、-需要声明（DOCTYPE）" class="headerlink" title="1、 需要声明（DOCTYPE）"></a>1、 需要声明（DOCTYPE）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">DOCTYPE（document type）文档类型的简写，用来说明你用的XHTML或者HTML是什么版本。其中DTD</span><br><span class="line">叫文档类型定义，里面包含了文档的规则，浏览器就根据你定义的DTD来解释你页面的标识，并展现出来。</span><br><span class="line">要建立符合标准的网页，DOCTYPE声明是必不可少的关键组成部分；除非你的XHTML确定了一个正确的DOCTYPE，</span><br><span class="line">否则你的标识和css都不会生效。 有过度的（Transitional）、严格的（strict）、框架的（frameset）。</span><br></pre></td></tr></table></figure>
+<h4 id="2、需要定义语言编码"><a href="#2、需要定义语言编码" class="headerlink" title="2、需要定义语言编码"></a>2、需要定义语言编码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta http-equiv=“Content-Type” content=“text/html; charset=gb2312” /&gt;</span><br><span class="line"></span><br><span class="line">注：如果忘记了定义语言编码，可能会出现页面乱码现象。</span><br></pre></td></tr></table></figure>
+<h4 id="3、JavaScript定义"><a href="#3、JavaScript定义" class="headerlink" title="3、JavaScript定义"></a>3、JavaScript定义</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Js必须要用&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;来开头定义，以保证在</span><br><span class="line">不支持js的浏览器上直接显示出来</span><br></pre></td></tr></table></figure>
+<h4 id="4、CSS定义"><a href="#4、CSS定义" class="headerlink" title="4、CSS定义"></a>4、CSS定义</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">CSS必须要用&lt;style type=“text/css”&gt;开头来定义，为保证各浏览器的兼容性，在写CSS时请都写上数量单位，</span><br><span class="line">例如：错误：.space_10&#123;padding-left:10&#125; 正确：.space_10 &#123;padding-left:10px&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="5、使用注释"><a href="#5、使用注释" class="headerlink" title="5、使用注释"></a>5、使用注释</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">正确的应用等号或者空格替换内部的虚线。&lt;!--这里是注释============这里是注释--&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="6、所有标签的元素和属性名字都必须使用小写"><a href="#6、所有标签的元素和属性名字都必须使用小写" class="headerlink" title="6、所有标签的元素和属性名字都必须使用小写"></a>6、所有标签的元素和属性名字都必须使用小写</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">与HTML不一样，XHTML对大小写是敏感的，&lt;title&gt;和&lt;TITLE&gt;是不同的标签。XHTML要求所有的标签和属性</span><br><span class="line">的名字都必须使用小写。</span><br></pre></td></tr></table></figure>
+<h4 id="7、所有属性值必须用引号括起来（””-‘’）双引号或单引号"><a href="#7、所有属性值必须用引号括起来（””-‘’）双引号或单引号" class="headerlink" title="7、所有属性值必须用引号括起来（”” ‘’）双引号或单引号"></a>7、所有属性值必须用引号括起来（”” ‘’）双引号或单引号</h4><h4 id="8、把所有特殊符号用编码表示"><a href="#8、把所有特殊符号用编码表示" class="headerlink" title="8、把所有特殊符号用编码表示"></a>8、把所有特殊符号用编码表示</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">空格为  、小于号（&lt;）&lt;、大于号（&gt;）&gt;、和号（&amp;）&amp;等。</span><br></pre></td></tr></table></figure>
+<h4 id="9、所有属性必须有属性值"><a href="#9、所有属性必须有属性值" class="headerlink" title="9、所有属性必须有属性值"></a>9、所有属性必须有属性值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">XHTML规定所有属性都必须有个值，没有值就是重复本身。</span><br></pre></td></tr></table></figure>
+<h4 id="10、所有的标记都必须有相应的结束标记"><a href="#10、所有的标记都必须有相应的结束标记" class="headerlink" title="10、所有的标记都必须有相应的结束标记"></a>10、所有的标记都必须有相应的结束标记</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">双标记：&lt;div&gt;&lt;/div&gt; 单标记：&lt;img /&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="11、所有的标记都必须合理嵌套"><a href="#11、所有的标记都必须合理嵌套" class="headerlink" title="11、所有的标记都必须合理嵌套"></a>11、所有的标记都必须合理嵌套</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;b&gt;&lt;/p&gt;&lt;/b&gt;必须修改为：&lt;p&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="12、图片添加有意义的alt属性"><a href="#12、图片添加有意义的alt属性" class="headerlink" title="12、图片添加有意义的alt属性"></a>12、图片添加有意义的alt属性</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">图片加载失败时可以用alt属性表明图片内容。同理添加文字链接的title属性，帮助显示不完整的内容显示完整。</span><br></pre></td></tr></table></figure>
+<h4 id="13、在form表单中增加label，以增加用户友好度"><a href="#13、在form表单中增加label，以增加用户友好度" class="headerlink" title="13、在form表单中增加label，以增加用户友好度"></a>13、在form表单中增加label，以增加用户友好度</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;form&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;firstname&quot;&gt;first name: &lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;text&quot; id=&quot;firstname&quot;/&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/form&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">以上是规范标准，结论：1、标签规范可以提高搜索引擎对页面的抓取效率，对SEO（搜索引擎优化）很有帮助。</span><br><span class="line"></span><br><span class="line">2、尽量使用外链css样式表和js脚本。是结构、表现和行为分为三块，符合规范。同时提高页面渲染速度，</span><br><span class="line">提高用户的体验。</span><br><span class="line"></span><br><span class="line">3、样式尽量少用行间样式表，使结构与表现分离，标签的id和class等属性命名要做到见文知义，标签越少，</span><br><span class="line">加载越快，用户体验提高，代码维护简单，便于改版</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/10/hexo搭建/" rel="next" title="hexo搭建">
+                <i class="fa fa-chevron-left"></i> hexo搭建
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/29/webppack简析/" rel="prev" title="webppack简析">
+                webppack简析 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/lu.jpg" alt="suling Wu">
+            
+              <p class="site-author-name" itemprop="name">suling Wu</p>
+              <p class="site-description motion-element" itemprop="description">好的事情可以承受的起，坏的事情可以承受的住</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#W3C标准及规范"><span class="nav-number">1.</span> <span class="nav-text">W3C标准及规范</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念：W3C标准"><span class="nav-number">1.1.</span> <span class="nav-text">概念：W3C标准</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目的：为什么要遵循标准"><span class="nav-number">1.2.</span> <span class="nav-text">目的：为什么要遵循标准</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目标：一个标准的制作的网站，让你压根感觉不到跟标准有关。"><span class="nav-number">1.3.</span> <span class="nav-text">目标：一个标准的制作的网站，让你压根感觉不到跟标准有关。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#受众：-所有UI设计师、技术工程师、运行维护人员。"><span class="nav-number">1.4.</span> <span class="nav-text">受众： 所有UI设计师、技术工程师、运行维护人员。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标准规范："><span class="nav-number">1.5.</span> <span class="nav-text">标准规范：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、-需要声明（DOCTYPE）"><span class="nav-number">1.5.1.</span> <span class="nav-text">1、 需要声明（DOCTYPE）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、需要定义语言编码"><span class="nav-number">1.5.2.</span> <span class="nav-text">2、需要定义语言编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、JavaScript定义"><span class="nav-number">1.5.3.</span> <span class="nav-text">3、JavaScript定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、CSS定义"><span class="nav-number">1.5.4.</span> <span class="nav-text">4、CSS定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、使用注释"><span class="nav-number">1.5.5.</span> <span class="nav-text">5、使用注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、所有标签的元素和属性名字都必须使用小写"><span class="nav-number">1.5.6.</span> <span class="nav-text">6、所有标签的元素和属性名字都必须使用小写</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、所有属性值必须用引号括起来（””-‘’）双引号或单引号"><span class="nav-number">1.5.7.</span> <span class="nav-text">7、所有属性值必须用引号括起来（”” ‘’）双引号或单引号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8、把所有特殊符号用编码表示"><span class="nav-number">1.5.8.</span> <span class="nav-text">8、把所有特殊符号用编码表示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9、所有属性必须有属性值"><span class="nav-number">1.5.9.</span> <span class="nav-text">9、所有属性必须有属性值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10、所有的标记都必须有相应的结束标记"><span class="nav-number">1.5.10.</span> <span class="nav-text">10、所有的标记都必须有相应的结束标记</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11、所有的标记都必须合理嵌套"><span class="nav-number">1.5.11.</span> <span class="nav-text">11、所有的标记都必须合理嵌套</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12、图片添加有意义的alt属性"><span class="nav-number">1.5.12.</span> <span class="nav-text">12、图片添加有意义的alt属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13、在form表单中增加label，以增加用户友好度"><span class="nav-number">1.5.13.</span> <span class="nav-text">13、在form表单中增加label，以增加用户友好度</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结尾"><span class="nav-number">1.6.</span> <span class="nav-text">结尾</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">suling Wu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+</html>
